@@ -1,9 +1,3 @@
-//Everytime you add book, use this component.
-//Make is reusable.
-
-//Get the books from google books api
-//https://developers.google.com/books
-//you may need to use axios for this.
 // check google cloud platform or firebase
 
 import { FaReact } from "react-icons/fa";

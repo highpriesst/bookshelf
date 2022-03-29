@@ -1,7 +1,4 @@
-//1 footer for every page.
 import React from "react";
-
-//TODO: Add links to the footer
 
 const Footer = () => {
   return (
