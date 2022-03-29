@@ -9,7 +9,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <BookCard className="flex justify-center items-center mx-auto" />
+      <div className="flex justify-center items-center h-screen">
+        <BookCard className="flex  mx-auto" />
+      </div>
       <Footer />
     </div>
   );
