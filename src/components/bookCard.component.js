@@ -1,12 +1,12 @@
 // check google cloud platform or firebase
 
-import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
-import { AiOutlineClockCircle } from "react-icons/ai";
-import { VscChecklist } from "react-icons/vsc";
-import { FaPlay } from "react-icons/fa";
-import { MoonIcon } from "@heroicons/react/solid";
-import { SunIcon } from "@heroicons/react/solid";
+// import { FaReact } from "react-icons/fa";
+// import { SiTypescript } from "react-icons/si";
+// import { AiOutlineClockCircle } from "react-icons/ai";
+// import { VscChecklist } from "react-icons/vsc";
+// import { FaPlay } from "react-icons/fa";
+
+//Use grid for this part not flex, center it with another way.
 
 const BookCard = ({ toggle, settoggle }) => {
   return (

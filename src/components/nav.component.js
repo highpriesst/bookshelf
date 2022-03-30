@@ -1,14 +1,15 @@
 import React from "react";
+import SwitchTheme from "./SwitchTheme.component";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
-        <div className="container flex flex-wrap justify-between items-cente mx-auto">
+      <nav className="bg-gray-200 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
+        <div className="container flex flex-wrap justify-between items-center  mx-auto">
           <a href="/#" className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-white mr-2"
+              className="h-6 w-6 text-black dark:text-white mr-2"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -25,7 +26,7 @@ const Navbar = () => {
             </span>
           </a>
           <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-            <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-m md:font-medium">
+            <ul className="flex flex-col justify-center items-center mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-m md:font-medium">
               <li>
                 <a
                   href="/#"
@@ -50,6 +51,7 @@ const Navbar = () => {
                   Vault
                 </a>
               </li>
+              <SwitchTheme className="block" />
             </ul>
           </div>
         </div>

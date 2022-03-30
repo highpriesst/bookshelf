@@ -2,14 +2,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="p-4 bg-white fixed bottom-0 w-full px-2 sm:px-4 py-2.5 dark:bg-gray-800">
+    <footer className="p-4 bg-gray-200 fixed bottom-0 w-full px-2 sm:px-4 py-2.5 dark:bg-gray-800">
       <div>
-        <nav className="bg-white border-gray-200 px-2 sm:px-4 dark:bg-gray-800">
+        <nav className="bg-gray-200 border-gray-200 px-2 sm:px-4 dark:bg-gray-800">
           <div className="container flex flex-wrap justify-between items-cente mx-auto">
             <a href="/#" className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-white mr-2"
+                className="h-6 w-6 text-black dark:text-white mr-2"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

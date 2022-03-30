@@ -7,7 +7,7 @@ import BookCard from "./components/BookCard.component";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App transition-colors duration-300">
       <Navbar />
       <div className="flex justify-center items-center h-screen">
         <BookCard className="flex  mx-auto" />
