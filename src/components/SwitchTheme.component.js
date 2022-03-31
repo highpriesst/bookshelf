@@ -1,4 +1,3 @@
-//Switch button for dark or light theme.
 import React from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";

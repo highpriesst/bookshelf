@@ -14,3 +14,4 @@ Showcase the books you read.
 - [ ] Login Screen after the BookCard finished
 - [ ] Storing user login data (firebase? )
 - [ ] Storing added/removed books in Vault page
+- [ ] Check stytch for email thing, instead firebase.
