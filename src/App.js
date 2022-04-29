@@ -4,6 +4,7 @@ import Footer from "./components/Footer.component";
 import BookCard from "./components/BookCard.component";
 
 //Make this App hold state for the boooks.
+//tailwind quick center -> min-h-screen flex flex-col items-center justify-center
 
 function App() {
   return (
