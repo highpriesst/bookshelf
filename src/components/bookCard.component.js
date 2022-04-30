@@ -10,8 +10,9 @@
 import React from "react";
 
 //make this component receieve state from somewhhere else.
+//might need to  add axios
 
-const BookCard = ({ toggle, settoggle }) => {
+const BookCard = () => {
   return (
     <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="/">

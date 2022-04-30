@@ -15,4 +15,3 @@ Showcase the books you read.
 - [ ] Storing user login data (firebase? )
 - [ ] Storing added/removed books in Vault page
 - [ ] Check stytch for email thing, instead firebase.
-- [ ] Check [this](https://www.openpeeps.com/) for about page.
