@@ -15,3 +15,4 @@ Showcase the books you read.
 - [ ] Storing user login data (firebase? )
 - [ ] Storing added/removed books in Vault page
 - [ ] Check stytch for email thing, instead firebase.
+- [ ] Add profile page to take it back to your main portfolio
