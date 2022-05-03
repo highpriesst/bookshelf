@@ -1,10 +1,3 @@
-// import { FaReact } from "react-icons/fa";
-// import { SiTypescript } from "react-icons/si";
-// import { AiOutlineClockCircle } from "react-icons/ai";
-// import { VscChecklist } from "react-icons/vsc";
-// import { FaPlay } from "react-icons/fa";
-
-//Use grid for this part not flex, center it with another way.
 import React from "react";
 
 //make this component receieve state from somewhhere else.

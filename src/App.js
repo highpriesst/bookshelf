@@ -14,9 +14,14 @@ function App() {
     <div className="App transition-colors duration-300">
       <Navbar />
       <div className="flex justify-center items-center h-screen">
-        <BookCard className="flex  mx-auto" />
+        <div className="grid grid-cols-3 gap-4" id="card-container">
+          <BookCard className="flex  mx-auto" />
+          <BookCard className="flex  mx-auto" />
+          <BookCard className="flex  mx-auto" />
+          <BookCard className="flex  mx-auto" />
+        </div>
       </div>
-      <Footer />
+      <Footer className="absolute" />
     </div>
   );
 }

@@ -4,6 +4,8 @@ Adding books you read into the vault, writing reviews about them.
 
 Showcase the books you read.
 
+App gets the props only. 1 way to down.
+
 #TODO:
 
 - [x] Dark/Light Theme button, also ?.animaion
