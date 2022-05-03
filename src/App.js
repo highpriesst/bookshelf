@@ -11,14 +11,17 @@ import BookCard from "./components/BookCard.component";
 
 function App() {
   return (
-    <div className="App transition-colors duration-300">
-      <Navbar />
-      <div className="flex justify-center items-center h-screen">
-        <div className="grid grid-cols-3 gap-4" id="card-container">
-          <BookCard className="flex  mx-auto" />
-          <BookCard className="flex  mx-auto" />
-          <BookCard className="flex  mx-auto" />
-          <BookCard className="flex  mx-auto" />
+    <div className="App transition-colors duration-300 overflow-auto bg-repeat-y">
+      <Navbar className="inline-block" />
+      <div>
+        <div className=" flex justify-center items-center h-screen">
+          <div className="grid grid-cols-4 gap-y-4" id="card-container">
+            <BookCard className="flex  mx-auto" />
+            <BookCard className="flex  mx-auto" />
+            <BookCard className="flex  mx-auto" />
+            <BookCard className="flex  mx-auto" />
+            <BookCard className="flex  mx-auto" />
+          </div>
         </div>
       </div>
       <Footer className="absolute" />

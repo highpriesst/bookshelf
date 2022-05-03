@@ -18,3 +18,4 @@ App gets the props only. 1 way to down.
 - [ ] Storing added/removed books in Vault page
 - [ ] Check stytch for email thing, instead firebase.
 - [ ] Add profile page to take it back to your main portfolio
+- [ ] Use [Animations](https://animate.style/)
