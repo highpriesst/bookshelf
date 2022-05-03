@@ -10,7 +10,7 @@ App gets the props only. 1 way to down.
 
 - [x] Dark/Light Theme button, also ?.animaion
   > Used frame-motion and react-icons/ri
-- [ ] Design BookCard
+- [x] Design BookCard
 - [ ] Add Google Books API
 - [ ] Check Axios for the api ( npm )
 - [ ] Login Screen after the BookCard finished

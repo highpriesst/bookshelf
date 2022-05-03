@@ -11,11 +11,11 @@ const BookCard = () => {
         <div className="p-5 rounded-md">
           <img src={sandman} alt="" />
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Sandman Book 1
+            The Sandman Vol. 1: Preludes & Nocturnes
           </h5>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            Neil Gaiman's award-winning masterpiece The Sandman is one of the
+            most popular and critically acclaimed graphic novels of all time.
           </p>
           <a
             href="/"
