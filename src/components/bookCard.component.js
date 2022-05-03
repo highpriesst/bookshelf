@@ -6,8 +6,8 @@ import sandman from "../images/sandman1.jpeg";
 
 const BookCard = () => {
   return (
-    <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mr-5 ml-5">
-      <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-xs bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mr-5 ml-5">
+      <div className="max-w-xs bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
         <div className="p-5 rounded-md">
           <img src={sandman} alt="" />
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

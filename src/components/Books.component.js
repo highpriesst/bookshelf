@@ -3,7 +3,8 @@ import BookCard from "./BookCard.component";
 
 const Books = () => {
   return (
-    <div className="grid grid-cols-3 gap-3">
+    <div className="flex flex-wrap justify-center items-center gap-4">
+      {/* Make it map the vault and render according */}
       <BookCard />
       <BookCard />
       <BookCard />
