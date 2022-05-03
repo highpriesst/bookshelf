@@ -4,7 +4,7 @@ import SwitchTheme from "./SwitchTheme.component";
 const Navbar = () => {
   return (
     <div className="pb-8 z-100 overflow-hidden">
-      <nav className="fixed w-full bg-gray-200 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
+      <nav className="sticky top-0 w-full bg-gray-200 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
         <div className="container flex flex-wrap justify-between items-center  mx-auto">
           <a href="/#" className="flex items-center">
             <svg
