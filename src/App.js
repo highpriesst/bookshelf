@@ -13,7 +13,10 @@ function App() {
   return (
     <div className="App flex flex-col transition-colors duration-300 overflow-auto bg-repeat-y dark:bg-gradient-to-r from-slate-600 to-slate-800">
       <Navbar />
-      <Books />
+      <div className=" flex min-h-screen justify-center items-center">
+        <Books />
+      </div>
+      <Footer />
     </div>
   );
 }
