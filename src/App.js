@@ -11,10 +11,9 @@ import Books from "./components/Books.component";
 
 function App() {
   return (
-    <div className="App transition-colors duration-300 overflow-auto bg-repeat-y">
+    <div className="App flex flex-col transition-colors duration-300 overflow-auto bg-repeat-y dark:bg-gradient-to-r from-slate-600 to-slate-800">
       <Navbar />
       <Books />
-      <Footer />
     </div>
   );
 }
