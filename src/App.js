@@ -6,25 +6,24 @@ const url = `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fictio
 
 function App() {
   const [data, setData] = useState({});
-  const [bestSeller, setBestSeller ] = useState([])
-  const [book, setBook] = useState({})
+  const [bestSeller, setBestSeller] = useState([]);
 
   async function fetchBooks() {
     const res = await fetch(url);
     const data = await res.json();
 
-    setData(data)
-    setBestSeller(data.results.books)
-
+    setData(data);
+    //TODO: bestseller array map
+    console.log(bestSeller);
   }
 
   useEffect(() => {
     fetchBooks();
-  },[]);
+  }, []);
 
-  return(
+  return (
     <div>
-      <p>wdo</p>
+      <p>dw</p>
     </div>
   );
 }
