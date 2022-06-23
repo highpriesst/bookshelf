@@ -2,26 +2,31 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./App.css";
 
-const url = "";
+const url = `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.REACT_APP_NEWYORK_API_KEY}`;
 
 function App() {
   const [data, setData] = useState({});
-  const [book, setBook] = useState("");
+  const [bestSeller, setBestSeller ] = useState([])
+  const [book, setBook] = useState({})
 
   async function fetchBooks() {
     const res = await fetch(url);
     const data = await res.json();
 
-    setData(data.docs[0]);
-    setBook(data.q);
-    console.log(data.docs[0]);
+    setData(data)
+    setBestSeller(data.results.books)
+
   }
 
   useEffect(() => {
     fetchBooks();
-  });
+  },[]);
 
-  return <div className="">{book ? <p>{book}</p> : <p>Loading...</p>}</div>;
+  return(
+    <div>
+      <p>wdo</p>
+    </div>
+  );
 }
 
 export default App;
