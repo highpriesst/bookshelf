@@ -4,4 +4,4 @@ Adding books you read into the vault, writing reviews about them.
 
 Showcase the books you read.
 
---just the main page. - abandoned project.
+--just the main page. -re-visiting the project 'empty'
