@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./App.css";
 
+//works
 const url = `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.REACT_APP_NEWYORK_API_KEY}`;
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
     setData(data);
     //TODO: bestseller array map
+    console.log(data);
     console.log(bestSeller);
   }
 
