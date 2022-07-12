@@ -4,41 +4,21 @@ import axios from "axios";
 
 function Book() {
   const [results, setResults] = useState({});
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  const [authors, setAuthors] = useState([]);
-  const [cover, setCover] = useState([]);
-
   useEffect(() => {
-    searchBestSellers();
-  }, []);
-
-  const searchBestSellers = async () => {
-    setLoading(true);
-
-    try {
+    const searchBestSellers = async () => {
       const res = await axios.get(
         `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.REACT_APP_NEWYORK_API_KEY}`
       );
-      setResults(res.data.results);
-      const author = results.books.map((a) => a.author);
-      const covers = results.books.map((a) => a.book_image);
-      //TODO: Api doesn't load, fix that
-      //TODO: Figure out usecontex hook
-      //TODO: modify page via error and loading interactivly
-      setAuthors(author);
-      setCover(cover);
-    } catch (error) {
-      setError(error || "Error");
-    } finally {
-      setLoading(false);
-    }
-  };
+      setResults(res.data.results.books);
+    };
+    //https://dmitripavlutin.com/react-useeffect-infinite-loop/
+    //read this for the useefffect problem that axios not rendering on refresh.
+    searchBestSellers();
+  }, []);
 
   return (
     <div>
-      <Search author={authors} cover={cover} />
+      <Search results={results} />
     </div>
   );
 }

@@ -1,18 +1,29 @@
 import React from "react";
 
-function Search({ authors, cover }) {
+function Search({ results }) {
   return (
-    <div>
-      <h1>Best Sellers</h1>
-      {authors?.map((a, i) => (
-        <div>
-          <li key={i}>{a}</li>
-        </div>
-      ))}
-      {cover?.map((img) => (
-        <img src={img.book_image} alt="cover" />
-      ))}
-    </div>
+    // this works when axios load
+    <section>
+      {results?.map((book, i) => {
+        const { author, book_image, contributor, description, title, rank } =
+          book;
+
+        return (
+          <article
+            key={rank}
+            className="flex justify-center items-center h-screen flex-row">
+            <div>
+              <h2>{title}</h2>
+              <span>{rank}</span>
+              <h3>{author}</h3>
+              <img src={book_image} alt="cover" style={{ height: 200 }} />
+              <p>{description}</p>
+              <span>{contributor}</span>
+            </div>
+          </article>
+        );
+      })}
+    </section>
   );
 }
 
