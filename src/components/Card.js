@@ -7,7 +7,7 @@ function Card({ title, rank, author, book_image, description }) {
       <p>
         {author} <span>{rank}</span>
       </p>
-      <img src={book_image} alt="" />
+      <img src={book_image} alt={author} />
       <p>{description}</p>
     </div>
   );
