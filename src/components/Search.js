@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./Card";
 
 function Search({ results }) {
   return (
@@ -9,16 +10,13 @@ function Search({ results }) {
 
         return (
           <article key={rank} className="p-4">
-            <div className="border border-black max-h-80 max-w-80">
-              <p className=" float-left mr-3">{rank}</p>
-              <p className="">{author}</p>
-              <img
-                src={book_image}
-                alt={title}
-                style={{ height: 200, width: 200 }}
-              />
-              <p>{description}</p>
-            </div>
+            <Card
+              author={author}
+              book_image={book_image}
+              description={description}
+              title={title}
+              rank={rank}
+            />
           </article>
         );
       })}
