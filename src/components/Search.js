@@ -4,12 +4,12 @@ import Card from "./Card";
 function Search({ results }) {
   return (
     // this works when axios load
-    <section className="grid grid-cols-3 p-5 justify-center items-center">
+    <section className=" p-6 bg-gray-100 grid gap-x-8 gap-y-4 grid-cols-2">
       {results.map((book) => {
         const { author, book_image, description, title, rank } = book;
 
         return (
-          <article key={rank} className="p-4">
+          <article key={rank} className="max-h-[31.25rem]">
             <Card
               author={author}
               book_image={book_image}

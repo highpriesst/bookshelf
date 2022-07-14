@@ -12,8 +12,7 @@ function Book() {
       setResults(res.data.results.books);
       console.log(res.data.results.books);
     };
-    //https://dmitripavlutin.com/react-useeffect-infinite-loop/
-    //read this for the useefffect problem that axios not rendering on refresh.
+
     searchBestSellers();
   }, []);
 
