@@ -2,7 +2,7 @@ import React from "react";
 
 function Card({ title, rank, author, book_image, description }) {
   return (
-    <div className="card-wrapper flex flex-row p-2 divide-y divide-blue-200 md:h-[180px] md:justify-between">
+    <div className="card-wrapper flex flex-row p-2 md:h-[180px] md:justify-between border-b-2">
       <div className="flex md:flex md:justify-between">
         <ol>
           <li className="p-1 flex ">
