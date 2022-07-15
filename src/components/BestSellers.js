@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Header from "./Header";
 import HardCoverFiction from "./HardCoverFiction";
 import axios from "axios";
 
@@ -18,8 +19,9 @@ function BestSellers() {
   }, []);
 
   return (
-    <div>
-      <HardCoverFiction results={results} />
+    <div className="best-seller-main">
+      <Header />
+      <HardCoverFiction results={results} className="p-8" />
     </div>
   );
 }

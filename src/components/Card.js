@@ -2,22 +2,28 @@ import React from "react";
 
 function Card({ title, rank, author, book_image, description }) {
   return (
-    //Style the background and the cards background, add a button maybe?
-    //Button could be link to amazon?
-    //Use material design.
-    //Minimalist.
-    <div className="most-outher flex flex-row w-screen">
-      <ol className="flex">
-        <li className=" bg-gray-200 p-1 flex ">
-          <div className="float-left flex justify-center mr-2 mt-1">
-            <span className="text-2xl">{rank}</span>
-          </div>
-          <div>
-            <p className=" text-xs font-bold mt-2">{title}</p>
-            <p className=" font-light text-sm">by {author}</p>
-          </div>
-        </li>
-      </ol>
+    <div className="card-wrapper flex flex-row p-2 divide-y divide-blue-200 md:h-[180px] md:justify-between">
+      <div className="flex md:flex md:justify-between">
+        <ol>
+          <li className="p-1 flex ">
+            <div className="float-left flex justify-center m-2">
+              <span className="text-2xl text-gray-400 font-mono">{rank}</span>
+            </div>
+            <div className="content md:flex md:flex-1 md:flex-col">
+              <p className=" text-xs font-bold  mt-2">{title}</p>
+              <p className=" font-light text-sm">by {author}</p>
+              <p className="hidden md:block font-normal">{description}</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div className="image hidden md:block md:w-auto md:float-right">
+        <img
+          src={book_image}
+          alt={rank}
+          style={{ height: "159px", width: "90px" }}
+        />
+      </div>
     </div>
   );
 }
