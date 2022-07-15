@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Search from "./Search";
+import HardCoverFiction from "./HardCoverFiction";
 import axios from "axios";
 
-function Book() {
+function BestSellers() {
   const [results, setResults] = useState([]);
   useEffect(() => {
     const searchBestSellers = async () => {
@@ -11,6 +11,7 @@ function Book() {
       );
       setResults(res.data.results.books);
       console.log(res.data.results.books);
+      console.log(res.data);
     };
 
     searchBestSellers();
@@ -18,9 +19,9 @@ function Book() {
 
   return (
     <div>
-      <Search results={results} />
+      <HardCoverFiction results={results} />
     </div>
   );
 }
 
-export default Book;
+export default BestSellers;
