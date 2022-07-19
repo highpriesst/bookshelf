@@ -8,4 +8,9 @@ Showcase the books you read.
 
 Figure out rendering only top 5 and put a link for other 10
 
-TODO: - [ ] Homepage - [ ] Error Page - [ ] About Page (Links) - [ ] Footer
+TODO:
+
+- [ ] Homepage
+- [ ] Error Page
+- [ ] About Page (Links)
+- [ ] Footer
