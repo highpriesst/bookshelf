@@ -13,4 +13,4 @@ TODO:
 - [ ] Homepage
 - [ ] Error Page
 - [ ] About Page (Links)
-- [ ] Footer
+- [x] Footer
