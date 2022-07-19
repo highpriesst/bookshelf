@@ -1,29 +1,41 @@
-import React from "react";
-import Card from "./Card";
+import React, { useState, useEffect } from "react";
+import Card from "./Card.component";
+import axios from "axios";
 
-function HardCoverFiction({ results }) {
+function HardcoverFiction() {
+  const [results, setResults] = useState([]);
+  useEffect(() => {
+    const searchBestSellers = async () => {
+      const res = await axios.get(
+        `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.REACT_APP_NEWYORK_API_KEY}`
+      );
+      setResults(res.data.results.books);
+      console.log(res.data.results.books);
+      console.log(res.data);
+    };
+
+    searchBestSellers();
+  }, []);
+
   return (
-    // this works when axios load
-    <section className=" grid grid-cols-1">
-      <h2 className="font-black p-2">Hardfiction Best seller</h2>
+    <React.Fragment>
       {results.map((book) => {
         const { author, book_image, description, title, rank } = book;
 
         return (
-          <>
+          <section className=" grid grid-cols-1" key={rank}>
             <Card
               author={author}
               book_image={book_image}
               description={description}
               title={title}
               rank={rank}
-              key={rank}
             />
-          </>
+          </section>
         );
       })}
-    </section>
+    </React.Fragment>
   );
 }
 
-export default HardCoverFiction;
+export default HardcoverFiction;

@@ -1,13 +1,18 @@
 // import Header from "./components/Header";
 import React from "react";
-import BestSellers from "./components/BestSellers";
+import HardcoverFiction from "./components/HardcoverFiction";
+import { Routes, Route } from "react-router-dom";
 
-//BROKEN BROWSER ROUTER TODO:FIX
+//When add /hardcover, workds.
+
+//TODO: Create homepage for this and make sure it works on click!
 
 function App() {
   return (
     <div>
-      <BestSellers />
+      <Routes>
+        <Route path="/hardcover" element={<HardcoverFiction />} />
+      </Routes>
     </div>
   );
 }
