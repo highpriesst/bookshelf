@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Card from "./Card.component";
 import axios from "axios";
 
+//HEROICON used here for the button
+
 function HardcoverFiction() {
   const [results, setResults] = useState([]);
+
+  let navigate = useNavigate();
+
   useEffect(() => {
     const searchBestSellers = async () => {
       const res = await axios.get(
@@ -18,7 +24,27 @@ function HardcoverFiction() {
   }, []);
 
   return (
-    <React.Fragment>
+    <div className="relative">
+      <button
+        className="flex ml-auto mr-2 gap-1 bg-gray-300 p-1 rounded-xl text-gray-700"
+        type="button">
+        Home{" "}
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M7 16l-4-4m0 0l4-4m-4 4h18"
+            />
+          </svg>
+        </span>
+      </button>
       {results.map((book) => {
         const { author, book_image, description, title, rank } = book;
 
@@ -34,7 +60,7 @@ function HardcoverFiction() {
           </section>
         );
       })}
-    </React.Fragment>
+    </div>
   );
 }
 
