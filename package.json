@@ -8,6 +8,8 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
     "eslint-visitor-keys": "^3.3.0",
@@ -45,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.0.23",
+    "webpack-cli": "^4.10.0"
   }
 }

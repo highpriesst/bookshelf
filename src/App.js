@@ -1,6 +1,6 @@
 // import Header from "./components/Header";
 import React from "react";
-import HardcoverFiction from "./components/HardcoverFiction";
+import HardcoverFiction from './components/HardCoverFiction'
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";

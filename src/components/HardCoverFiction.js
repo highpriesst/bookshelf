@@ -7,6 +7,7 @@ import axios from "axios";
 
 function HardcoverFiction() {
   const [results, setResults] = useState([]);
+  const [loading ,setLoading] = useState(false)
 
   let navigate = useNavigate();
 
@@ -16,16 +17,19 @@ function HardcoverFiction() {
         `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.REACT_APP_NEWYORK_API_KEY}`
       );
       setResults(res.data.results.books);
+      setLoading(true)
       console.log(res.data.results.books);
       console.log(res.data);
     };
 
     searchBestSellers();
+    setLoading(false)
   }, []);
 
   return (
     <div className="relative">
-      <button
+      {
+        loading ? <button
         className="flex ml-auto mr-2 gap-1 bg-gray-300 p-1 rounded-xl text-gray-700"
         type="button">
         Home{" "}
@@ -44,7 +48,8 @@ function HardcoverFiction() {
             />
           </svg>
         </span>
-      </button>
+      </button> : null
+      }
       {results.map((book) => {
         const { author, book_image, description, title, rank } = book;
 
