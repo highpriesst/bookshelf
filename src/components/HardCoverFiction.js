@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Card from "./Card.component";
 import axios from "axios";
 
+
 //HEROICON used here for the button
 
 function HardcoverFiction() {
@@ -26,13 +27,14 @@ function HardcoverFiction() {
     setLoading(false);
   }, []);
 
+  
+
   return (
     <div className="relative">
       {loading ? (
         <button
-          className="flex ml-auto mr-2 gap-1 bg-gray-200 p-1 rounded-xl text-black"
+          className="flex ml-auto mr-2 gap-1 bg-gray-200 p-1 mt-2 rounded-xl text-black"
           type="button">
-          Home{" "}
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assests/Logo.png";
 
+
 function Header() {
   return (
     <div className="flex flex-row bg-gray-200 items-center">
@@ -19,6 +20,7 @@ function Header() {
             d="M4 6h16M4 12h16M4 18h7"
           />
         </svg>
+        <Link to="/hardcover">Hardcover</Link>
       </button>
       <nav className="flex flex-grow-1 mx-auto p-2 items-center font-bold bg-gray-200 text-black">
         <Link to="/" className="">
@@ -30,3 +32,4 @@ function Header() {
 }
 
 export default Header;
+
