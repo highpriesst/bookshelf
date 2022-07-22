@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="flex h-12 w-full items-center justify-evenly p-2 text-black font-bold">
+    <footer className="flex h-12 w-full items-center justify-evenly p-2 text-black bg-gray-100 font-bold">
       Created by Ertan
       <a href="https://www.github.com/highpriesst" className="flex gap-1">
         <span>
